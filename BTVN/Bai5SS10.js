@@ -34,7 +34,7 @@ generatePlayerSeasonReport = (playerName, teamHistory) => {
             historyPlayer.name = element.name;
             historyPlayer.position = element.position;
             historyPlayer.nationality = element.nationality;
-            searchPlayer[3].forEach((element) => {
+            element.forEach((element) => {
                 let fullMatches = element.reduce((sumMatches, matches) => {
                     return sumMatches += matches;
                 }, 0);
